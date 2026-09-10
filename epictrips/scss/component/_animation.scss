@@ -1,0 +1,150 @@
+@keyframes ripple {
+    0% {
+        width: 100px;
+        height: 100px;
+        opacity: 0.6;
+        background-color: var(--White);
+    }
+
+    100% {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+        background-color: var(--White);
+    }
+}
+
+
+@keyframes tf-preload-1 {
+    0% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes tf-preload-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+}
+
+@keyframes ani1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ani2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(25%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ani3 {
+    0% {
+        transform: rotate(0);
+    }
+
+    20% {
+        transform: rotate(20deg);
+
+    }
+
+    40% {
+        transform: rotate(-20deg);
+
+    }
+
+    60% {
+        transform: rotate(10deg);
+
+    }
+
+    80% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes ani4 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes ani5 {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    25% {
+        transform: translateY(-80%);
+    }
+
+    75% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.tf-fade-top {
+    transform: translateY(-30px);
+    opacity: 0;
+    visibility: hidden;
+    @include transition5;
+}
+@keyframes arrows {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}

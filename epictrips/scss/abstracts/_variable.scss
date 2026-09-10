@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// settings
+$font-main: "Barlow", sans-serif; //change
+$font-main2: "DM Sans", sans-serif; //change
+$font-main3:"Plus Jakarta Sans", sans-serif;; //change
+$fontIcon: "icomoon";
+$fontIcon2: "flaticon_upskill";
+:root {
+    --Primary: #0D62E2;
+    --Critical:#EB4D4D;
+    --Yellow:#FFB321;
+    --Success:#37B853;
+    --Black: #000000;
+    --White: #ffffff;
+    --On-Surface: #121212;
+    --Surface:#F7F7F7;
+    --Secondary:#64666C;
+    --Line:#DFE2E7;
+    --Placehoder:#B1B1B1;   
+    --Border: #FFFFFF1A;
+    --bg-footer:#141816;
+    --text-color-1: rgba(255,255,255,0.6);
+    --bg-sub-nav:#F5F5F2;
+}

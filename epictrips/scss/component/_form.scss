@@ -1,0 +1,114 @@
+form {
+    position: relative;
+    z-index: 30;
+
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 100%;
+        padding: 8px 15px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        background-color: var(--White);
+        border: 1px solid var(--Line);
+        border-radius: 4px;
+        color: var(--Soft-Text);
+        overflow: hidden;
+        margin-bottom: 0;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: var(--Placehoder);
+        }
+
+        &.style-default {
+            padding: 0;
+            border: 0 !important;
+            border-radius: 0;
+            background-color: transparent;
+        }
+    }
+
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        background-color: transparent;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    textarea {
+        height: 112px;
+        &.h-204{
+            height: 204px;
+        }
+    }
+
+}
+
+select {
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    width: 100%;
+
+    &.pb-20 {
+        padding-bottom: 20px;
+    }
+}
+
+.cols {
+    @include d-flex();
+    gap: 16px;
+}
+
+.mess-contact {
+    height: 204px;
+}
+
+.check-box {
+    @include d-flex();
+    align-items: center;
+    gap: 6px;
+    input[type=checkbox],
+    input [type=radio] {
+        width: 12px;
+        height: 12px;
+    }
+    &.style-2{
+        input[type=checkbox]{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    &.pl-3{
+        padding-left: 3px;
+    }
+    &.gap-9{
+        gap: 9px;
+    }
+}

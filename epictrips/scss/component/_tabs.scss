@@ -1,0 +1,34 @@
+.widget-tabs {
+    &.style-small {
+        .widget-menu-tab {
+            @include flex(center, center);
+            gap: 12px;
+            padding-bottom: 40px;
+            .item-title {
+                @include transition3();
+                cursor: pointer;
+                position: relative;
+                color: var(--On-Surface);
+                padding: 8px 24px;
+                background-color: var(--Surface);
+                border-radius: 8px;
+
+                &.active,
+                &:hover {
+                    color: var(--White);
+                    background-color: var(--Primary);
+                }
+            }
+        }
+
+        .widget-content-tab {
+            p {
+                color: var(--color-text-3);
+                letter-spacing: 0.09px;
+                line-height: 26px;
+            }
+        }
+
+    }
+
+}

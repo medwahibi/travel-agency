@@ -1,0 +1,85 @@
+.offcanvas-fillter{
+    height: 100vh !important;
+    width: 320px;
+    @include transition2;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px) !important;
+    background-color:transparent;
+    z-index: 9999 !important;
+    &.show {
+        transform: translateY(0px) !important;
+        opacity: 1;
+        visibility: visible;
+        @include transition2;
+        z-index: 9999 !important;
+    }
+    .btn-close-fillter{
+        background-color: var(--White);
+    }
+}
+.offcanvas-login{
+    height: 100vh !important;
+    max-width: 480px;
+    margin: 0 auto;
+    @include transition2;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    background-color:transparent;
+    &.show {
+        top: 100px;
+        opacity: 1;
+        visibility: visible;
+        @include transition2;
+        z-index: 9999 !important;
+    }
+    .btn-close-login{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--White);
+        top: -20px;
+        right: -20px;
+        i{
+            color: var(--On-Surface);
+        }
+    }
+}
+.offcanvas-register{
+    height: 100vh !important;
+    max-width: 480px;
+    margin: 0 auto;
+    @include transition2;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color:transparent;
+    &.show {
+        top: 100px;
+        opacity: 1;
+        visibility: visible;
+        @include transition2;
+        z-index: 9999 !important;
+    }
+    .btn-close-register{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--White);
+        top: -20px;
+        right: -20px;
+        i{
+            color: var(--On-Surface);
+        }
+    }
+}
+
+#modalnewletter{
+    .modal-content{
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
